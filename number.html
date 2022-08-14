@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>num converter</title>
+</head>
+<body>
+    <h1>convert number to word</h1>
+    <input type="text" id="numWord">
+    <br>
+    <button id="btn" onclick="convertNumToWords()">submit</button>
+    <br>
+    <p>converted: <span id="word"></span></p>
+
+
+     
+
+    <script>
+       
+
+        function convertNumToWords(num){
+              const inputNum = document.getElementById("numWord").value;
+              const convertbtn = document.getElementById("btn")
+
+            const oneUnit = new Array("Zero","one", "two","three", "four", "five", "six", "seven", "eight", "nine")
+            const twoDigit = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixeen', 'seventeen', 'eighteen', 'nineteen']
+            
+            document.getElementById("word").innerHTML = oneUnit[eval(inputNum)]
+            // document.getElementById("word").innerHTML = twoDigit[eval(inputNum +" "+num.value)]
+
+
+            if (+num.value in twoDigit){
+            word.innerHTML = twoDigit[+num.value]}
+       }
+        
+
+      
+
+        // converting words to figure
+
+        function convertWordsToNum(words){
+            const inputNum = document.getElementById("numWord").value;
+        
+
+            const oneWord = new Array(1,2,3,4,5,6,7,8,9)
+            document.getElementById("word").innerHTML = oneWord[eval(inputNum)]
+
+            
+        }
+
+    </script>
+</body>
+</html>
