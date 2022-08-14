@@ -1,7 +1,7 @@
 const Crypt = require('cryptr')
 crypt = new Crypt('amara')
-const encstring = crypt.encrypt('welcome to the training');
-const decrypt = crypt.decrypt(encstring);
+const encryption = crypt.encrypt('welcome to the training');
+const decryption = crypt.decrypt(encryption);
 
-console.log(encstring)
-console.log(decrypt)
+console.log(encryption)
+console.log(decryption)
